@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacquard+24&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+  font-family: Inter, sans-serif;
+  background: #ECEDF2;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container .bg-image {
+  opacity: 0.05;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 23px;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+}
+
+header h2 {
+  font-family: 'Jacquard 24', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 36px;
+  color: #736969;
+  text-align: center;
+}
+
+main > p {
+  font-weight: 400;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.certification-statement {
+  margin: 50px auto 20px;
+}
+
+main > h1 {
+  font-size: 40px;
+  font-family: "Jacquard 24", cursive;
+  font-weight: 400;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.table-container {
+  padding: 20px 30px;
+  width: 100%;
+  background: url(./assets/Rectangle\ 41173.png);
+  background-size: cover;
+  text-align: left;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.table-header > span:first-child {
+  font-size: 20px;
+}
+
+.table {
+  width: 75%;
+  border: none;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  padding-bottom: 10px;
+}
+
+tbody td:first-child {
+  min-width: 300px;
+}
+
+tbody td:nth-child(2) {
+  padding-right: 30px;
+}
+
+tbody td {
+  text-transform: uppercase;
+}
+
+td {
+  padding: 2px 0;
+}
+
+tfoot td {
+  padding-top: 20px;
+}
+
+.signature-container {
+  margin: 30px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 20px;
+}
+
+.signature-container .signature {
+  max-width: 40%;
+}
+
+footer {
+  margin-top: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-end;
+  column-gap: 20px;
+}
+
+footer p {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.qrcode {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 30px;
+  }
+}
